@@ -1,0 +1,72 @@
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.basic-page {
+  padding: 24px;
+}
+
+.custom-input-wrapper {
+  display: inline-block;
+  line-height: 1;
+}
+
+.show-word-limit {
+  position: absolute;
+  line-height: 1;
+  right: 11px;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  user-select: none;
+  color: #bfbfbf;
+}
+
+.ant-table-column-has-actions {
+  background-clip: padding-box !important;
+}
+
+// 省略
+.word-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// 抽屉式sider样式
+.ant-drawer.drawer-sider {
+  .ant-drawer-body {
+    padding: 0;
+  }
+}
+
+// 打印样式
+@media print {
+  .ant-layout {
+    padding: 0 !important;
+  }
+  .layout-sider {
+    display: none;
+  }
+  .layout-header {
+    display: none;
+  }
+  .layout-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
